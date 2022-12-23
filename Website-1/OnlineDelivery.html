@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Online Delivery</title>
+    <style>
+        .table,tr,td{
+        border: 1px solid black;
+   
+           }
+        .section1{
+margin: 5rem 30rem;
+height: 60%;
+ width: 40%;
+ border: 1px solid;
+}
+.textheader{
+    font-weight: 600;
+    text-align: center;
+    width: 40%;
+}
+.textarea{
+    text-align: center;
+    padding: .2rem;
+}
+.address{
+    width: 20rem;
+    height: 4rem;
+}
+img{
+    width: 0.4rem;
+    height: 0.5rem;
+    margin-left: 0.2rem;
+}
+.textarea{
+            background-color: rgb(242, 242, 191);
+        }
+    </style>
+</head>
+<body>
+    <div class="section1">
+        <table>
+            <tr><td colspan="2" class="textheader">XYZ Online Delivery</td></tr>
+            <tr><td colspan="2" class="textheader">Personal Details</td></tr>
+            <tr><td>First Name<img src="./images/astrick.png"/></td> <td><input type="text" class="textarea"></td></tr>
+            <tr><td>Phone Number</td> <td><input type="text" class="textarea"></td></tr>
+            <tr><td colspan="2" class="textheader">Order Preferences</td></tr>
+            <tr><td>Size<img src="./images/astrick.png"/></td> <td><label for="rd1">Small</label><input type="radio" id="rd1" name="size" value="small"><label for="rd2">Medium</label><input type="radio" id="rd2" name="size"  value="medium"><label for="rd3">Large</label><input type="radio" id="rd3" name="size" value="large"></td></tr>
+            <tr>
+                <td>Base <img src="./images/astrick.png"/></td>  </td><td><select id="degree" name="degree">
+                    <option value="">Select</option>
+                    <option value="op1">Cheese Crust</option>
+                    <option value="op2">Pan Pizza</option>
+                    <option value="op3">Doctorate</option>
+                     </select></td></td>
+                     <tr><td>Toppings</td><td>
+                        <label for="checkbox1">Cheese</label><input type="checkbox" id ="checkbox1" name="top"/>
+                         <label for="checkbox2">Olives</label><input type="checkbox" name="top"  id ="checkbox2" />
+                         <label for="checkbox2">Tomattos</label><input type="checkbox" name="top"  id ="checkbox3" />
+                         <label for="checkbox2">Mushrooms</label><input type="checkbox" name="top"  id ="checkbox4" />
+                         <label for="checkbox2">Capsicum</label><input type="checkbox" name="top"  id ="checkbox5" />
+                        </td></tr>
+                        <tr>
+                            <td> Additional Details </td><td>
+                                <input type="text" class="address"/>
+                            </td>
+                        </tr>
+                        <tr><td colspan="2" class="textheader">Confirm details proceed to Pay ?<label for="rd1">Yes</label><input type="radio" id="rd1" name="pay"/><label for="rd2">No</label><input type="radio" id="rd2" name="pay"/></td></tr>
+                        <tr><td colspan="2" class="textheader"><input type="button" Value="Submit"></td>
+        </table>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+
+
+        .table,tr,td{
+            border: 2px solid;
+            font-weight: 500;
+        }
+        .center{
+           text-align: center;
+        }
+        .textarea{
+            background-color: rgb(242, 242, 191);
+        }
+        .textheader{
+            font-weight: 700;
+   
+        }
+        .section1{
+
+          margin: 5rem 30rem;
+          height: 60%;
+           width: 30%;
+           border: 2px solid;
+        
+        
+        }
+    </style>
+</head>
+<body>
+    <div class="section1" >
+        
+        
+        <table>
+         
+               <tr class="center"> <td colspan="3" class="textheader">XYZ University Registration Form</td></tr>
+                <td rowspan="4" class="textheader">Personal Details<td>* First Name </td><td><input type="text" class="textarea"></td></td>
+                 <tr>   <td>* Last Name </td><td><input type="text" class="textarea"></td> </tr>
+                 <tr><td>* DOB</td><td><input type="date"></td></tr>
+                 <tr><td>Gender</td><td><label for="rd1">Male</label><input type="radio" name="gender" id="rd1"><label for="rd2">Female</label><input type="radio" name="gender" id="rd2"><label for="rd3">Other</label><input type="radio" name="gender" id="rd3"></td></tr>
+
+                   <td rowspan="4" class="textheader">Acamedic Details<td><label for="drgree">* Degree</label> </td><td><select id="degree" name="degree">
+                    <option value="">Select</option>
+                    <option value="UG">Bachelors</option>
+                    <option value="PG">Masters</option>
+                    <option value="Masters">Doctorate</option>
+                     </select></td></td>
+                 <tr>   <td>Specialization</td><td><input type="text"></td> </tr>
+                 <tr><td>Mode of Instruction</td><td><label for="checkbox1">ClassRoom</label><input type="checkbox" id ="checkbox1" name="Instruction"/> <label for="checkbox2">Online</label><input type="checkbox" name="Instruction"  id ="checkbox2" /></td></tr>
+               
+                 <tr><td>* Current CPGA</td><td><input type="text"></td></tr>
+
+                 <td rowspan="2" class="textheader">Contact Details<td>* Phone Number</td><td><input type="text"></td></td>
+                  <tr>   <td>Address</td><td><input type="Address" style="height:50px" class="textarea"></td> </tr>
+                  <tr><td colspan="3"><label for="checkbox1" class="textheader"> I have assured that all the details entered are correct Yes</label><input id ="checkbox1" type="checkbox"/></tr>
+                    <tr><td colspan="3"><input type="submit" style="margin: 0 12rem;"/></tr>
+                     
+        </table>
+
+    </div>
+    
+</body>
+</html>
